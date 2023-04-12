@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -14,9 +15,10 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
-            bindings = <&trans>;
-            key-positions = <50 57>;
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp C>;
             slow-release;
             layers = <0 1 2>;
         };
