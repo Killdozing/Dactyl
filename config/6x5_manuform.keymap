@@ -49,8 +49,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <500>;
             bindings =
-                <&caps_word>,
-                <&kp LSHIFT>;
+                <&kp LSHIFT>,
+                <&CAPS>;
         };
     };
 
