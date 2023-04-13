@@ -50,7 +50,7 @@
             tapping-term-ms = <500>;
             bindings =
                 <&kp LSHIFT>,
-                <&CAPS>;
+                <kp &CAPS>;
         };
     };
 
