@@ -10,9 +10,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-
     behaviors {
-
         Layer_1: Layer_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_1";
@@ -30,6 +28,12 @@
             bindings =
                 <&mo 2>,
                 <&tog 2>;
+        };
+        caps: caps {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS";
+            #binding-cells = <0>;
+            continue-list = <RSHIFT>;
         };
     };
 
@@ -55,6 +59,23 @@
             key-positions = <13 14>;
             bindings = <&kp ESC>;
             layers = <0 1 2 3>;
+        };
+
+        new_combo {
+            bindings = <&mac_menu>;
+            key-positions = <52 55>;
+        };
+    };
+
+    macros {
+        mac_menu: mac_menu {
+            compatible = "zmk,behavior-macro";
+            label = "MAC_MENU";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RG(SPACE)>,
+                <&macro_release>;
         };
     };
 
@@ -131,7 +152,7 @@
   &kp TAB    &kp Q   &kp W      &kp F          &kp P     &kp B       &kp J      &kp L      &kp U    &kp Y   &kp SEMI  &kp MINUS
 &kp LSHFT    &kp A   &kp R      &kp S          &kp T     &kp G       &kp M      &kp N      &kp E    &kp I      &kp O    &kp SQT
 &kp GRAVE    &kp Z   &kp X      &kp C          &kp D     &kp V       &kp K      &kp H  &kp COMMA  &kp DOT   &kp FSLH   &kp BSLH
-&kp LCTRL  &kp DEL   &mo 1  &kp LSHFT  &kp BACKSPACE  &kp LALT  &kp RSHIFT  &kp SPACE   &kp RGUI    &mo 2  &kp ENTER  &kp RCTRL
+&kp LCTRL  &kp DEL  &trans  &kp LSHFT  &kp BACKSPACE  &kp LALT  &kp RSHIFT  &kp SPACE   &kp RGUI   &trans  &kp ENTER  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
