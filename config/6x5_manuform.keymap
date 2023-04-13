@@ -48,7 +48,9 @@
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&mt LSHIFT CAPSLOCK>, <&kp LCTRL>;
+            bindings =
+                <&caps_word>,
+                <&kp LSHIFT>;
         };
     };
 
@@ -106,10 +108,10 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-  &kp ESC   &kp N1    &kp N2     &kp N3         &kp N4    &kp N5      &kp N6     &kp N7     &kp N8    &kp N9     &kp N0  &kp EQUAL
-  &kp TAB    &kp Q     &kp W      &kp E          &kp R     &kp T       &kp Y      &kp U      &kp I     &kp O      &kp P  &kp MINUS
-&kp LSHFT    &kp A     &kp S      &kp D          &kp F     &kp G       &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT
-&kp GRAVE    &kp Z     &kp X      &kp C          &kp V     &kp B       &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
+  &kp ESC   &kp N1    &kp N2  &kp N3         &kp N4    &kp N5      &kp N6     &kp N7     &kp N8    &kp N9     &kp N0  &kp EQUAL
+  &kp TAB    &kp Q     &kp W   &kp E          &kp R     &kp T       &kp Y      &kp U      &kp I     &kp O      &kp P  &kp MINUS
+&kp LSHFT    &kp A     &kp S   &kp D          &kp F     &kp G       &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT
+&kp GRAVE    &kp Z     &kp X   &kp C          &kp V     &kp B       &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
 &kp LCTRL  &kp DEL  &Layer_2  &td_mt  &kp BACKSPACE  &kp LALT  &kp RSHIFT  &kp SPACE   &kp RGUI  &Layer_3  &kp ENTER  &kp RCTRL
             >;
 
@@ -125,11 +127,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-  &kp ESC   &kp N1    &kp N2     &kp N3         &kp N4    &kp N5      &kp N6     &kp N7     &kp N8    &kp N9     &kp N0  &kp EQUAL
-  &kp TAB    &kp Q     &kp W      &kp F          &kp P     &kp B       &kp J      &kp L      &kp U     &kp Y   &kp SEMI  &kp MINUS
-&kp LSHFT    &kp A     &kp R      &kp S          &kp T     &kp G       &kp M      &kp N      &kp E     &kp I      &kp O    &kp SQT
-&kp GRAVE    &kp Z     &kp X      &kp C          &kp D     &kp V       &kp K      &kp H  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
-&kp LCTRL  &kp DEL  &trans  &kp LSHFT  &kp BACKSPACE  &kp LALT  &kp RSHIFT  &kp SPACE   &kp RGUI  &trans  &kp ENTER  &kp RCTRL
+  &kp ESC   &kp N1  &kp N2     &kp N3         &kp N4    &kp N5      &kp N6     &kp N7     &kp N8   &kp N9     &kp N0  &kp EQUAL
+  &kp TAB    &kp Q   &kp W      &kp F          &kp P     &kp B       &kp J      &kp L      &kp U    &kp Y   &kp SEMI  &kp MINUS
+&kp LSHFT    &kp A   &kp R      &kp S          &kp T     &kp G       &kp M      &kp N      &kp E    &kp I      &kp O    &kp SQT
+&kp GRAVE    &kp Z   &kp X      &kp C          &kp D     &kp V       &kp K      &kp H  &kp COMMA  &kp DOT   &kp FSLH   &kp BSLH
+&kp LCTRL  &kp DEL  &trans  &kp LSHFT  &kp BACKSPACE  &kp LALT  &kp RSHIFT  &kp SPACE   &kp RGUI   &trans  &kp ENTER  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
