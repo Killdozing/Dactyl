@@ -167,11 +167,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-  &kp ESC  &hm EXCLAMATION KP_N1          &kp N2       &kp N3        &kp N4       &kp N5  &kp N6        &kp N7       &kp N8       &kp N9           &kp N0  &kp EQUAL
-  &kp TAB                  &kp Q     &hm LG(W) W  &hm LG(F) F         &kp P        &kp B   &kp J         &kp L        &kp U  &hm RG(Y) Y         &kp SEMI  &kp MINUS
-&kp LSHFT         &hm LEFT_ALT A  &hm LEFT_GUI R  &hm LCTRL S  &hm LSHIFT T        &kp G   &kp M  &hm RSHIFT N  &hm RCTRL E   &hm RGUI I  &hm RIGHT_ALT O    &kp SQT
-&kp GRAVE            &hm LG(Z) Z     &hm LG(X) X  &hm LG(C) C         &kp D  &hm LG(V) V   &kp K         &kp H    &kp COMMA      &kp DOT         &kp FSLH   &kp BSLH
-   &trans                 &trans          &trans       &trans        &trans       &trans  &trans        &trans       &trans       &trans           &trans     &trans
+  &kp ESC    &kp NUMBER_1          &kp N2       &kp N3        &kp N4       &kp N5  &kp N6        &kp N7       &kp N8       &kp N9           &kp N0  &kp EQUAL
+  &kp TAB           &kp Q     &hm LG(W) W  &hm LG(F) F         &kp P        &kp B   &kp J         &kp L        &kp U  &hm RG(Y) Y         &kp SEMI  &kp MINUS
+&kp LSHFT  &hm LEFT_ALT A  &hm LEFT_GUI R  &hm LCTRL S  &hm LSHIFT T        &kp G   &kp M  &hm RSHIFT N  &hm RCTRL E   &hm RGUI I  &hm RIGHT_ALT O    &kp SQT
+&kp GRAVE     &hm LG(Z) Z     &hm LG(X) X  &hm LG(C) C         &kp D  &hm LG(V) V   &kp K         &kp H    &kp COMMA      &kp DOT         &kp FSLH   &kp BSLH
+   &trans          &trans          &trans       &trans        &trans       &trans  &trans        &trans       &trans       &trans           &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
