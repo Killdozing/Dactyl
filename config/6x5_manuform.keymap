@@ -88,6 +88,18 @@
 
             tapping-term-ms = <500>;
         };
+        hm_layer_4: hm_layer_4 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LAYER_4";
+            bindings =
+                <&Layer_3>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <50>;
+        };
     };
 
     combos {
@@ -170,11 +182,11 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-        &kp ESC          &kp N1       &kp N2       &kp N3         &kp N4            &kp N5       &kp N6        &kp N7       &kp N8      &kp N9              &kp N0  &kp EQUAL
-        &kp TAB           &kp Q  &hm LG(W) W        &kp E    &hm LG(R) R             &kp T  &hm RG(Y) Y         &kp U        &kp I       &kp O               &kp P  &kp MINUS
- &kp LEFT_SHIFT  &hm LEFT_ALT A   &hm RGUI S  &hm LCTRL D   &hm LSHIFT F             &kp G        &kp H  &hm RSHIFT J  &hm RCTRL K  &hm RGUI L  &hm RIGHT_ALT SEMI    &kp SQT
-&hm LCTRL TILDE     &hm LG(Z) Z  &hm LG(X) X  &hm LG(C) C    &hm LG(V) V             &kp B  &hm RG(N) N         &kp M    &kp COMMA     &kp DOT            &kp FSLH   &kp BSLH
-      &kp LCTRL         &kp DEL     &Layer_3       &td_mt  &kp BACKSPACE  &mt LEFT_ALT TAB       &td_mt     &kp SPACE     &kp RGUI    &Layer_2           &kp ENTER  &kp RCTRL
+        &kp ESC                   &kp N1       &kp N2       &kp N3         &kp N4            &kp N5       &kp N6        &kp N7       &kp N8      &kp N9              &kp N0  &kp EQUAL
+        &kp TAB                    &kp Q  &hm LG(W) W        &kp E    &hm LG(R) R             &kp T  &hm RG(Y) Y         &kp U        &kp I       &kp O               &kp P  &kp MINUS
+ &kp LEFT_SHIFT  &hm_layer_4 undefined A   &hm RGUI S  &hm LCTRL D   &hm LSHIFT F             &kp G        &kp H  &hm RSHIFT J  &hm RCTRL K  &hm RGUI L  &hm RIGHT_ALT SEMI    &kp SQT
+&hm LCTRL TILDE              &hm LG(Z) Z  &hm LG(X) X  &hm LG(C) C    &hm LG(V) V             &kp B  &hm RG(N) N         &kp M    &kp COMMA     &kp DOT            &kp FSLH   &kp BSLH
+      &kp LCTRL                  &kp DEL     &Layer_3       &td_mt  &kp BACKSPACE  &mt LEFT_ALT TAB       &td_mt     &kp SPACE     &kp RGUI    &Layer_2           &kp ENTER  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
