@@ -88,9 +88,9 @@
 
             tapping-term-ms = <500>;
         };
-        hm_layer_4: hm_layer_4 {
+        hm_layer_3: hm_layer_3 {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_LAYER_4";
+            label = "HM_LAYER_3";
             bindings =
                 <&Layer_3>,
                 <&kp>;
